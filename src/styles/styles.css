@@ -1,0 +1,16 @@
+.d-badge {
+   position: relative;
+}
+.d-badge[data-d-badge]::after {
+   content: attr(data-d-badge);
+   position: absolute;
+   top: -10px;
+   right: -10px;
+   background: #dc3545;
+   color: white;
+   text-align:center;
+   border-radius: .25rem;
+   z-index: 10;
+   padding: 0 .25rem;
+   font-size: .9rem;
+}

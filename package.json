@@ -1,0 +1,47 @@
+{
+	"name": "lazy-badges",
+	"version": "0.0.1",
+	"description": "A library to select any text on a web page without dependencies",
+	"main": "dist/lazy-badges.js",
+	"module": "dist/lazy-badges.es.js",
+	"browser": "dist/lazy-badges.umd.js",
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "rollup -c && tsc",
+		"build:watch": "rollup -cw",
+		"test": "testcafe chrome tests/*test*",
+		"test:ci": "testcafe chrome:headless tests/*test*",
+		"verify": "npm run build && npm run test:ci"
+	},
+	"devDependencies": {
+		"puppeteer": "^1.13.0",
+		"rollup": "^1.6.0",
+		"rollup-plugin-css-porter": "^1.0.2",
+		"rollup-plugin-terser": "^4.0.4",
+		"rollup-plugin-typescript2": "^0.19.3",
+		"testcafe": "^1.1.0",
+		"typescript": "^3.3.3333"
+	},
+	"dependencies": {},
+	"keywords": [
+		"NPM",
+		"select",
+		"text",
+		"TypeScript",
+		"JavaScript",
+		"E2E",
+		"text selection"
+	],
+	"author": "Ali Kamalizade",
+	"license": "MIT",
+	"bugs": "https://github.com/ali-kamalizade/text-select/issues",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ali-kamalizade/text-select.git"
+	},
+	"private": false
+}
