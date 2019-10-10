@@ -1,7 +1,7 @@
 {
 	"name": "lazy-badges",
 	"version": "0.0.1",
-	"description": "A library to select any text on a web page without dependencies",
+	"description": "Lazy badges, from lazy people to lazy people",
 	"main": "dist/lazy-badges.js",
 	"module": "dist/lazy-badges.es.js",
 	"browser": "dist/lazy-badges.umd.js",
@@ -36,12 +36,12 @@
 		"E2E",
 		"text selection"
 	],
-	"author": "Ali Kamalizade",
+	"author": "Carlos Bonadeo",
 	"license": "MIT",
-	"bugs": "https://github.com/ali-kamalizade/text-select/issues",
+	"bugs": "https://github.com/cdmoro/lazy-badges/issues",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/ali-kamalizade/text-select.git"
+		"url": "https://github.com/cdmoro/lazy-badges.git"
 	},
 	"private": false
 }

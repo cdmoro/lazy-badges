@@ -1,3 +1,7 @@
+/**
+ * Init the lazy badges
+ */
+
 function init(): void {
     let badges: NodeListOf<Element> = document.querySelectorAll('[data-d-badge]')
     let i: number

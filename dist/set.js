@@ -1,3 +1,8 @@
+/**
+ * Set a new value on a new or existing badge
+ * @param id {string}
+ * @param value {number}
+ */
 function set(id, value) {
     let badge = document.querySelector('#' + id);
     if (badge) {

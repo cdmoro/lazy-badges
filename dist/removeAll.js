@@ -1,3 +1,6 @@
+/**
+ * Remove all lazy badges
+ */
 function removeAll() {
     let badges = document.querySelectorAll('[data-d-badge]');
     let i;

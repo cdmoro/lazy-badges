@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="../dist/lazy-badges.umd.js" type="text/javascript"></script> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+
+    <title>Lazy badges test</title>
+  </head>
+  <body>
+        <div class="container mt-3">
+            <h1 id="title" data-d-badge="5">Hello, world!</h1>
+            <div class="text-danger" data-d-badge="4">HOLAA</div>
+            <span data-d-badge="3">HOLAA</span>
+            <hr>
+            <button class="btn btn-success" data-d-badge="10" onclick="lb.init()">Init</button>
+            <button class="btn btn-primary" data-d-badge="1" onclick="lb.set('title', 2)">Set title</button>
+            <button class="btn btn-primary" data-d-badge="1" onclick="lb.remove('title')">Remove title</button>
+            <button class="btn btn-dark" data-d-badge="2" onclick="lb.removeAll()">Remove all</button>
+        </div>
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState == "interactive") {
+                lb.init()
+            }
+        }
+    </script>
+  </body>
+</html>

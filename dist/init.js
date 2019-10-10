@@ -1,3 +1,6 @@
+/**
+ * Init the lazy badges
+ */
 function init() {
     let badges = document.querySelectorAll('[data-d-badge]');
     let i;

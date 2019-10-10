@@ -1,3 +1,7 @@
+/**
+ * Remove all lazy badges
+ */
+
 function removeAll(): void {
     let badges: NodeListOf<Element> = document.querySelectorAll('[data-d-badge]')
     let i: number;

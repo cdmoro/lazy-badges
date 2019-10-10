@@ -8,6 +8,12 @@
             "script": "build",
             "group": "build",
             "problemMatcher": []
+        },
+        {
+            "type": "npm",
+            "script": "build:watch",
+            "group": "build",
+            "problemMatcher": []
         }
     ]
 }
