@@ -9,14 +9,14 @@ require('fs').unlink('dist/index.d.ts', (err) => {});
 export default {
 	input: 'src/index.ts',
 	output: [
-		// {
-		// 	file: pkg.main,
-		// 	format: 'cjs'
-		// },
-		// {
-		// 	file: pkg.module,
-		// 	format: 'es'
-		// },
+		{
+			file: pkg.main,
+			format: 'cjs'
+		},
+		{
+			file: pkg.module,
+			format: 'es'
+		},
 		{
 			file: pkg.browser,
 			format: 'umd',

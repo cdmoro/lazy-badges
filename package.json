@@ -2,8 +2,8 @@
 	"name": "lazy-badges",
 	"version": "0.0.1",
 	"description": "Lazy badges, from lazy people to lazy people",
-	"main": "dist/lazy-badges.js",
-	"module": "dist/lazy-badges.es.js",
+	"main": "dist/lazy-badges.common.js",
+	"module": "dist/lazy-badges.esm.js",
 	"browser": "dist/lazy-badges.umd.js",
 	"files": [
 		"dist",

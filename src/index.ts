@@ -3,7 +3,7 @@ import remove from './remove'
 import removeAll from './removeAll'
 import set from './set'
 
-export {
+export default {
 	init,
 	remove,
 	removeAll,
