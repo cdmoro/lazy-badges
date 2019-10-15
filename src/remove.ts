@@ -7,7 +7,7 @@ function remove(id: string): void {
     let badge: Element = document.querySelector(`#${id}`)
     
     if (badge)
-        badge.classList.remove('d-badge')
+        badge.classList.remove('lb-badge')
 }
 
 export default remove

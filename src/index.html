@@ -11,14 +11,14 @@
   </head>
   <body>
         <div class="container mt-3">
-            <h1 id="title" data-d-badge="5">Hello, world!</h1>
-            <div class="text-danger" data-d-badge="4">HOLAA</div>
-            <span data-d-badge="3">HOLAA</span>
+            <h1 id="title">Hello, world!</h1>
+            <div class="text-danger" data-lb-badge="4">HOLAA</div>
+            <span data-lb-badge="3">HOLAA</span>
             <hr>
-            <button class="btn btn-success" data-d-badge="10" onclick="lb.init()">Init</button>
-            <button class="btn btn-primary" data-d-badge="1" onclick="lb.set('title', 2)">Set title</button>
-            <button class="btn btn-primary" data-d-badge="1" onclick="lb.remove('title')">Remove title</button>
-            <button class="btn btn-dark" data-d-badge="2" onclick="lb.removeAll()">Remove all</button>
+            <button class="btn btn-success" data-lb-badge="10" onclick="lb.init()">Init</button>
+            <button class="btn btn-primary" data-lb-badge="1" onclick="lb.set('title', 2)">Set title</button>
+            <button class="btn btn-primary" data-lb-badge="1" onclick="lb.remove('title')">Remove title</button>
+            <button class="btn btn-dark" data-lb-badge="2" onclick="lb.removeAll()">Remove all</button>
         </div>
     <script>
         document.onreadystatechange = function () {

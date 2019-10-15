@@ -4,10 +4,10 @@
  * @param value {number}
  */
 function set(id, value) {
-    let badge = document.querySelector('#' + id);
+    let badge = document.querySelector(`#${id}`);
     if (badge) {
-        badge.classList.add('d-badge');
-        badge.setAttribute('data-d-badge', value.toString());
+        badge.classList.add('lb-badge');
+        badge.setAttribute('data-lb-badge', value.toString());
     }
 }
 export default set;

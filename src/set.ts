@@ -5,11 +5,11 @@
  */
 
 function set(id: string, value: number): void {
-    let badge: Element = document.querySelector('#' + id)
+    let badge: Element = document.querySelector(`#${id}`)
 
     if (badge) {
-        badge.classList.add('d-badge')
-        badge.setAttribute('data-d-badge', value.toString())
+        badge.classList.add('lb-badge')
+        badge.setAttribute('data-lb-badge', value.toString())
     }
 }
 

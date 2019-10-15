@@ -1,8 +1,8 @@
-.d-badge {
+.lb-badge {
    position: relative;
 }
-.d-badge[data-d-badge]::after {
-   content: attr(data-d-badge);
+.lb-badge[data-lb-badge]::after {
+   content: attr(data-lb-badge);
    position: absolute;
    top: -10px;
    right: -10px;

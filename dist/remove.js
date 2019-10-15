@@ -5,6 +5,6 @@
 function remove(id) {
     let badge = document.querySelector(`#${id}`);
     if (badge)
-        badge.classList.remove('d-badge');
+        badge.classList.remove('lb-badge');
 }
 export default remove;
