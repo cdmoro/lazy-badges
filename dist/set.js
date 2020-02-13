@@ -3,11 +3,10 @@
  * @param id {string}
  * @param value {number}
  */
-function set(id, value) {
-    let badge = document.querySelector(`#${id}`);
-    if (badge) {
-        badge.classList.add('lb-badge');
-        badge.setAttribute('data-lb-badge', value.toString());
+export const set = (id, value) => {
+    const el = document.getElementById(id);
+    if (el) {
+        el.classList.add('lb-badge');
+        el.dataset.lbBadge = value.toString();
     }
-}
-export default set;
+};

@@ -3,11 +3,10 @@
  * @param id {string}
  */
 
-function remove(id: string): void {
-    let badge: Element = document.querySelector(`#${id}`)
+export const remove = (id: string): void => {
+    const el: Element = document.getElementById(id)
     
-    if (badge)
-        badge.classList.remove('lb-badge')
+    if (el) {
+        el.classList.remove('lb-badge')
+    }
 }
-
-export default remove

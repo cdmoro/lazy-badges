@@ -1,7 +1,8 @@
 import typescript from 'rollup-plugin-typescript2'
 import pkg from './package.json'
 import { terser } from "rollup-plugin-terser"
-import css from 'rollup-plugin-css-porter'
+// import css from 'rollup-plugin-css-porter'
+import css from 'rollup-plugin-merge-and-inject-css'
 
 // delete old typings to avoid issues
 require('fs').unlink('dist/index.d.ts', (err) => {});
@@ -31,9 +32,12 @@ export default {
 			typescript: require('typescript'),
 		}),
 		css({
-			raw: false,
-			minified: 'lazy-badges.min.css',
+			id: 'lb'
 		}),
+		// css({
+		// 	raw: false,
+		// 	minified: 'lazy-badges.min.css',
+		// }),
 		terser()
 	]
 };

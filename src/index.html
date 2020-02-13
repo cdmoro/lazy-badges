@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- <link rel="stylesheet" href="./styles/styles.css"> -->
     <script src="../dist/lazy-badges.umd.js" type="text/javascript"></script> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
 
@@ -11,7 +11,12 @@
   </head>
   <body>
         <div class="container mt-3">
-            <h1 id="title">Hello, world!</h1>
+            <h1 data-lb-badge="1" id="title-1">Hello, world!</h1>
+            <h2 data-lb-badge="2" id="title-2">Hello, world!</h2>
+            <h3 data-lb-badge="3" id="title-3">Hello, world!</h3>
+            <h4 data-lb-badge="4" id="title-4">Hello, world!</h4>
+            <h5 data-lb-badge="5" id="title-5">Hello, world!</h5>
+            <h6 data-lb-badge="6" id="title-6">Hello, world!</h6>
             <div class="text-danger" data-lb-badge="4">HOLAA</div>
             <span data-lb-badge="3">HOLAA</span>
             <hr>
@@ -19,6 +24,15 @@
             <button class="btn btn-primary" data-lb-badge="1" onclick="lb.set('title', 2)">Set title</button>
             <button class="btn btn-primary" data-lb-badge="1" onclick="lb.remove('title')">Remove title</button>
             <button class="btn btn-dark" data-lb-badge="2" onclick="lb.removeAll()">Remove all</button>
+            <hr>
+            <div class="input-group" data-lb-badge="0" id="my-lazy-input">
+              <input 
+                type="text" 
+                class="form-control" 
+                oninput="lb.set('my-lazy-input', event.target.value.length)"
+                placeholder="Start writing and see the magic in the air... or in the right top corner"
+              />
+            </div>
         </div>
     <script>
         document.onreadystatechange = function () {

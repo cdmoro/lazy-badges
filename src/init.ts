@@ -2,12 +2,10 @@
  * Init the lazy badges
  */
 
-function init(): void {
-    let badges: NodeListOf<Element> = document.querySelectorAll('[data-lb-badge]')
-    let i: number
+export const init = (): void => {
+    const elements: NodeListOf<HTMLElement> = document.querySelectorAll('[data-lb-badge]')
 
-    for (i = 0; i < badges.length; i++)
-        badges[i].classList.add('lb-badge')
+    elements.forEach(item => {
+        item.classList.add('lb-badge')
+    })
 }
-
-export default init

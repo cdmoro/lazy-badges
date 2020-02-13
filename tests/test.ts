@@ -1,6 +1,6 @@
 import {Selector, ClientFunction} from 'testcafe';
 
-fixture('Demo').page('../demo.html');
+fixture('Index').page('../src/index.html');
 
 test('can select whole element text', async test => {
 	await test.click(Selector('#button1'));

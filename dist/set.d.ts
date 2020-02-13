@@ -3,5 +3,4 @@
  * @param id {string}
  * @param value {number}
  */
-declare function set(id: string, value: number): void;
-export default set;
+export declare const set: (id: string, value: number) => void;

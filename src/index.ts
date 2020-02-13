@@ -1,11 +1,6 @@
-import init from './init'
-import remove from './remove'
-import removeAll from './removeAll'
-import set from './set'
+import './styles/styles.css'
 
-export default {
-	init,
-	remove,
-	removeAll,
-	set
-}
+export { init } from './init'
+export { remove } from './remove'
+export { removeAll } from './removeAll'
+export { set } from './set'

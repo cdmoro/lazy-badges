@@ -1,5 +1,4 @@
 /**
  * Remove all lazy badges
  */
-declare function removeAll(): void;
-export default removeAll;
+export declare const removeAll: () => void;

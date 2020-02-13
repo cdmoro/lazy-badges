@@ -4,13 +4,11 @@
  * @param value {number}
  */
 
-function set(id: string, value: number): void {
-    let badge: Element = document.querySelector(`#${id}`)
+export const set = (id: string, value: number): void => {
+    const el: HTMLElement = document.getElementById(id)
 
-    if (badge) {
-        badge.classList.add('lb-badge')
-        badge.setAttribute('data-lb-badge', value.toString())
+    if (el) {
+        el.classList.add('lb-badge')
+        el.dataset.lbBadge = value.toString()
     }
 }
-
-export default set
